@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Website</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      nav {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+      }
+
+      header {
+        height: 100vh;
+        background: url("your-image.jpg") center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+      }
+
+     
+
+      form {
+        text-align: center;
+        margin: 20px;
+      }
+
+      input {
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .custom-card {
+        text-align: center;
+        margin: 20px;
+        border-radius: 300px; /* Rounded border for the card */
+        box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1); /* Black shadow */
+        padding: 3px; /* Additional padding */
+        background-color: whitesmoke;
+        width: 300px;
+    }
+    .card-img-top {
+        border-radius: 50%;
+        width: 200px; /* Adjust the size of the rounded image */
+        height: 200px; /* Adjust the size of the rounded image */
+        object-fit: cover;
+        margin: 18px auto;
+    }
+    .card-title {
+        margin-top: 15px;
+        font-size: 33px;
+        font-weight: 800;
+        color: midnightblue;
+    }
+    .bg-color {
+      height:100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .acad-heading{
+      font-size: 80px;
+      font-weight: 700;
+      color:white;
+      text-align: center;
+      padding-top: 30px;
+    }
+    .mainacademeic{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #7496DF;
+      justify-content: space-between;
+    }
+    footer {
+        background-color: #7496DF;
+        margin: 0; /* Remove default margin */
+        display: flex;
+        justify-content: flex-end; /* Align content to the right */
+        align-items: center; /* Center vertically */
+        height: 100vh; /* Full viewport height */
+      }
+  
+      .circle {
+        width: 550px;
+        height: 550px;
+        background-color: white;
+        border-radius: 50%;
+        margin-right: 250px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        z-index: 1;
+      }
+      .photo {
+        max-width: 100%;
+        height: auto;
+        margin-top: 335px;
+        position: relative;
+        margin-right: -150px;
+        z-index: 2;
+      }
+      
+
+
+     #facility  {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 20px;
+      }
+  
+      h1 {
+        color: #333;
+      }
+      h2 {
+        color: #184B6B;
+      }
+  
+      .image-container {
+        position: relative;
+        display: inline-block;
+        margin: 20px;
+      }
+  
+      .circle-image1 {
+        width: 192.44px; /* Adjust the width to make the circle larger */
+        height: 192.44px; /* Adjust the height to make the circle larger */
+        object-fit: cover;
+        border: 5px solid #fff;
+      }
+  
+      .overlay-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
+        max-height: 100%;
+      }
+  
+      .image-heading {
+        margin-top: 90px;
+        color: #555;
+        color:#184B6B;
+        font-weight: 900;
+        font-size: 28.1581px;
+      }
+      .kyc-image{
+        border-radius: 50%;
+          width: 25rem; /* Adjust the size of the rounded image */
+          height:25rem;
+          margin-right: 80px;
+      }
+      .kyc{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <!-- <header>
+    <h1>Hey BMSITIAN</h1>
+  </header> -->
+  <body>
+    <nav style="background-color: white; border-bottom: 2px solid black">
+      <div>
+        <span style="color: #257eaf; font-size:30px">BMSIT</span>
+      </div>
+      <div>
+        <a href="#" style="color: #257eaf; font-weight: 900 ;font-size:28px">Home</a>
+        <a
+          href="#about"
+          onclick="showSection('about')"
+          style="color: #257eaf; font-weight: 900;font-size:28px"
+          >About</a
+        >
+        <a
+          href="#academic"
+          onclick="showSection('academic')"
+          style="color: #257eaf; font-weight: 900;font-size:28px"
+          >Academic</a
+        >
+        <a
+          href="#facility"
+          onclick="showSection('facility')"
+          style="color: #257eaf; font-weight: 900;font-size:28px"
+          >Facility</a
+        >
+      </div>
+    </nav>
+
+    <section
+      id="home"
+      style="
+        background-color: #7496df;
+        margin: 0;
+        display: flex;
+        
+        justify-content: flex-start;
+        align-items: center;
+        height: 100vh;
+      "
+    >
+      <h2 style="font-family: YACgEfdj394-0;color:#fff ;font-size:90px ;margin-left:20px">Hey <br> BMSITians</h2>
+      <img src="./images/girl1.png" alt="Girl in a jacket" width="300" height="400" style="object-fit: contain;margin-left:100px">
+      <img src="./images/boy.png" alt="Girl in a jacket" width="300" height="400" style="object-fit: contain;">
+      <img src="./images/girl2.png" alt="Girl in a jacket"width="300" height="400" style="object-fit: contain;margin-right:120px">
+     
+    </section>
+
+    <section id="about">
+        <div style="align-items: center; height: 100vh; padding-top: 120px;">
+
+            <div class="kyc">
+              <div >
+                <img class="kyc-image"src="images/about_image.png " class="card-img-top" alt="Profile Image">
+        
+              </div>
+              <div style="">
+                <div><p style="font-size: 60px; font-weight: 800; color:#7496DF;">Know Your College..</p></div>
+                <div><p style=" font-size: 32px; color:black;">BMS Institutions takes pride in ​educating students since 1946 in ​various fields of Engineering and ​continues to provide world class ​education in the coming years with ​more emphasis on research and ​development. </p></div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section id="academic">
+        <div class="mainacademeic">
+            <div><h2 class="acad-heading">Academics</h2></div>
+            <div class="bg-color">
+              <!-- <div class=""> -->
+                <div class="custom-card" style="width: 22rem;height: 25rem; border-radius: 30px;">
+                    <img src="images/academics1.png" class="card-img-top" alt="Profile Image">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Under Graduate</h5>
+                    </div>
+                <!-- </div> -->
+            </div>
+            <!-- <div class="container rounded-3"> -->
+              <div class="custom-card p-4 " style="width: 22rem;height: 25rem; border-radius: 30px;">
+                  <img src="images/academics2.png" class="card-img-top" alt="Profile Image">
+                  <div class="card-body">
+                      <h5 class="card-title text-center">Post Graduate</h5>
+                  </div>
+              <!-- </div> -->
+          </div>
+          <!-- <div class="container"> -->
+            <div class="custom-card p-4" style="width: 22rem; height: 25rem;border-radius: 30px;">
+                <img src="images/academics3.png" class="card-img-top" alt="Profile Image">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Phd</h5>
+                </div>
+            <!-- </div> -->
+        </div>
+        
+            </div>
+          </div>
+    </section>
+
+    <section id="facility">
+        <h1  style="font-size:75px; color:#257eaf;">Facilities</h1>
+
+        <div class="image-container">
+          <img src="./images/dark_blue_circle.png" alt="Circle Image" class="circle-image1">
+          <img src="./images/one.png" class="overlay-image">
+          <h2 class="image-heading">Network <br>​Infrastru​cture</h2>
+        </div>
+      
+        <div class="image-container">
+          <img src="./images/light_blue_circle.png" alt="Circle Image" class="circle-image1">
+          <img src="./images/two.png" alt="Overlay Image 2" class="overlay-image">
+          <h2 class="image-heading">BICEP - <br>​Incubation ​Centre</h2>
+        </div>
+      
+        <div class="image-container">
+          <img src="./images/dark_blue_circle.png" alt="Circle Image" class="circle-image1">
+          <img src="./images/three.png" alt="Overlay Image 3" class="overlay-image">
+          <h2 class="image-heading">Entrepreneur<br>​-ship cell​</h2>
+        </div>
+      
+        <div class="image-container">
+          <img src="./images/light_blue_circle.png" alt="Circle Image" class="circle-image1">
+          <img src="./images/four.png" alt="Overlay Image 4" class="overlay-image">
+          <h2 class="image-heading">Higher <br>​Education ​Centre</h2>
+        </div>
+    </section>
+    <footer>
+        <img class="photo" src="./images/last_guy.png" alt="Your Photo">
+        <div class="circle">
+          <div class="circle-content" style="font-weight: 900; font-size:40px; color: #257EAF;">
+            Every year, many, ​many stupid people ​graduate from ​college. And if they ​can do it, so can ​you.
+          </div>
+        </div>
+    </footer>
+  </body>
+</html>
